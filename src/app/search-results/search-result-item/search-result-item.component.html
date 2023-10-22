@@ -1,0 +1,10 @@
+<div class="search-result-item" *ngFor="let searchItem of searchItems">
+    <img [src]="searchItem.videoThumbnailUrl" alt="Video Thumbnail">
+    <div class="views-count">Views: {{ searchItem.viewsCount }}</div>
+    <div class="likes-count">Likes: {{ searchItem.likesCount }}</div>
+    <div class="dislikes-count">Dislikes: {{ searchItem.dislikesCount }}</div>
+    <div class="comments-count">Comments: {{ searchItem.commentsCount }}</div>
+    <h2 class="video-title">{{ searchItem.videoTitle }}</h2>
+</div>
+
+  
